@@ -1,0 +1,77 @@
+
+<html>
+    <head>
+        <title> All Students Information</title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="studentMgt.css">
+    <script src="stuManagement.js"></script> -->
+        
+    </head>
+    <body>
+        <div class="container">
+            <form id="allInfo">
+            <div class="header">
+                    <h3>Welcome to Student Information Management System</h3>
+                </div>
+                <div class="topNav">
+                        <div class="col-lg-4">
+                                <a href="#"><span> </span></a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a routerLink='/home'><span>Home</span></a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href=""  id="disp"><span>Display All</span></a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#"><span>Search</span></a>
+                            </div>
+                            <div class="col-lg-2">
+                                <a href="#"><span>Logout</span></a>
+                            </div>
+            
+                </div>
+                <table class="table table-striped" id="stuList" height='100px' width='100px' >
+                    
+                <h3><span>All Student Information</span></h3>
+            
+            <thead>
+                <tr>
+                <th><span>StudentId</span></th>
+                <th><span>Registration</span></th>
+                <th><span>Name</span></th>
+                <th><span>Email</span></th>
+                <th><span>Status</span></th>
+                <th><span>Options</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let students of Students'>
+                      <td>{{students.id}}</td>
+                      <td>{{students.regDate}}</td>
+                    <td><span class="badge">{{students.firstName}}</span> {{students.lastName}}</td>
+                    <td>{{students.pEmail}}</td>
+                  </tr>
+<!-- <tr *ng-for='let students of Students'><td >{{Students}}</td></tr>
+<h2>My Students</h2>
+<ul class="Students">
+<li *ngFor="let students of Students">
+<span class="badge">{{students.firstName}}</span> {{students.lastName}}
+</li>
+</ul> -->
+                </tbody>
+            
+
+            
+            </table>
+
+           </form>
+        </div>
+
+    </body>
+</html>

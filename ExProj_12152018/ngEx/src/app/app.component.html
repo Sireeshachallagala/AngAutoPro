@@ -1,0 +1,75 @@
+<h1 id="top">Component Communication Cookbook</h1>
+
+ 
+
+<div id="parent-to-child" *ngIf="ishidden == '1'">
+  <app-hero-parent></app-hero-parent>
+</div> 
+  
+<hr>
+<div id="child-to-parent" *ngIf="ishidden == '2'">
+  <app-vote-taker></app-vote-taker>
+</div> 
+<hr>
+   
+
+
+<div id="parent-to-child" *ngIf="ishidden == '3'">
+<h2>Birthday DatePipe</h2>
+<p>The hero's birthday is {{ birthday | date }}</p>
+
+<p>The hero's birthday is {{ birthday | date:"MM/dd/yy" }} </p>
+
+<hr>
+ 
+
+<hr> 
+  <h2>Birthday Pipe Chaining</h2>
+  <p>
+    The chained hero's birthday is
+    {{ birthday | date | uppercase}}
+  </p>
+  
+  <p>
+    The chained hero's birthday is
+    {{  birthday | date:'fullDate' | uppercase}}
+  </p>
+  <p>
+    The chained hero's birthday is
+    {{ ( birthday | date:'fullDate' ) | uppercase}}
+  </p></div>
+
+  
+  <div *ngIf="ishidden == '5'">
+
+    <app-c1></app-c1>
+    
+  </div>
+
+  
+
+
+<div  id="services" *ngIf="ishidden == '4'">
+
+  <h2>My Heroes</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li>
+  </ul>
+</div> 
+
+ 
+ <!--
+
+  <h1>{{title}}</h1>
+<nav>
+  <a routerLink="/r1">Route1</a>
+  <a routerLink="/r2">Route2</a>
+  <a routerLink="/r3">Route3</a>
+</nav>
+<router-outlet></router-outlet>-->
+
+
+  
+

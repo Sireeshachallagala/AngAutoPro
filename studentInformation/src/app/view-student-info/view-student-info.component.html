@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Student Management</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="studentMgt.css">
+    <script src="studentMgmt.js"></script> -->
+</head>
+
+<body >
+
+    <div class="container">
+        <form >
+               
+            <div id="wrapper">
+                                    <header class="header">
+                        <h3>Welcome to Student Information Management System</h3>
+                                    </header>
+                
+
+
+                <nav class="topNav">
+                    <div class="col-lg-2">
+                        <span id='welcome'> Welcome </span>
+                    </div>
+                    <div class="col-lg-2">
+                        <a routerLink="/home"><span>Home </span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a routerLink="/viewStudentInfo"><span>View Profile</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a routerLink="/editStudentInfo"><span>Edit Profile</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a routerLink="#"><span>Change Password</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a routerLink="#"><span>Logout</span></a>
+                    </div>
+                </nav>
+
+                <div class="content">
+                    <table class="table table-striking">
+                        <tr class="row">
+                            <td><span class="span">Name:</span></td>
+                            <td id="fname"></td>
+                            <td></td>
+                            <td><img id="imid" src="" height="100px" width="100px"/></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span">Registration Date:</span></td> 
+                            <td id="regDate"> </td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span">Student Gender:</span></td>
+                            <td id="gender"></td>
+                            <td ><span>Date Of Birth:</span></td>
+                            <td id="dob"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span">Qualification:</span></td>
+                            <td id="qual"></td>
+                            <td><span>Contact Number:</span></td>
+                            <td id="cnumber"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span">Primary Email:</span></td>
+                            <td id="pemail"></td>
+                            <td><span>Secondary Email:</span></td>
+                            <td id="semail"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span>City:</span></td>
+                            <td id="city"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span">Address:</span></td>
+                            <td id="address"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span">Student Description:</span></td>
+                            <td id="sdesc"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span">Resume:</span></td>
+                            <td id="resume"></td>
+                        </tr>
+                        <tr class="row">
+                            <td> </td>
+                            <td><input type="button" class="button btn-normal" id="close" value="close"></td>
+                        </tr>
+                    </table>
+                </div>
+                <footer class="footer">
+
+                </footer>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

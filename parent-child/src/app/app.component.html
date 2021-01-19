@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+</div>
+
+<ul>
+  <!-- <app-votetaker></app-votetaker> -->
+  <!-- <app-parent></app-parent> -->
+  <p *ngIf="valid">Hello Angular</p>
+  <div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">Red Paragraph is shown</p>
+    <p *ngSwitchCase="'blue'">blue Paragraph is shown</p>
+    <p *ngSwitchDefault>Nothing</p>
+    <button (click)="add(2,8)" >Add</button>
+  </div>
+  <ul>
+    <li *ngFor="let color of colors">{{color}}</li>
+  </ul>
+</ul>
+

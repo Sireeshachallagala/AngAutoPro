@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h2>Todays Date  {{datetoday}}</h2>
+  <h2>My Heroes</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes"
+       >
+      <span class="badge">{{hero.id}}</span><span>{{hero.name}}</span>
+    </li>
+  </ul>

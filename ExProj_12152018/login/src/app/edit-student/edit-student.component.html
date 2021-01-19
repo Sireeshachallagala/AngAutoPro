@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>Student Management</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="studentMgt.css"> -->
+    <script src="studentMgmt.js"></script>
+    
+
+    <script>
+       
+    
+    </script>
+</head>
+            
+<body >
+
+    <div class="container">
+        <form  >
+    <div id=wrapper>
+            
+                <header class="header">
+                    <h3>Welcome to Student Information Management System</h3>
+                </header>
+            
+
+            
+                <nav class="topNav">
+                        <div class="col-lg-2">
+                            <span id='welcome'>Welcome</span>
+                        </div>
+                    <div class="col-lg-2">
+                        <a href="C:/Users/USER/angular-app/src/studentMgt/home.html"><span>Home </span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="C:/Users/USER/angular-app/src/studentMgt/ViewStudentInfo.html"><span>View Profile</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="C:/Users/USER/angular-app/src/studentMgt/editStudent.html"><span>Edit Profile</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><span>Change Password</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><span>Logout</span></a>
+                    </div>
+                </nav>
+            
+            <div class="content">
+                <table class="table table-sm">
+                    <tr class="row"><h4 id="editHead">Edit Information</h4></tr>
+                    <div style="text-align: center" id="updateMsg"></div>
+                    <tr class="row">
+                            <td><span class="span" >First Name:</span></td>
+                            <td><input type="text" class="text" id="fname" ></td>
+                            <td><span>Last Name:</span></td>
+                            <td><input type="text" id="lname"></td>
+                            <td><img src="" id="Imid" height="100px" width="100px"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span" >Registration Date:</span></td>
+                            <td><input type="date" class="date" id="regDate" value="xyz"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span" >Student Gender:</span></td>
+                            <td><span>Male:</span><input type="radio" name="gender">
+                            <span>Female:</span><input type="radio" name="gender"></td>
+                            <td><span>Date Of Birth:</span></td>
+                            <td><input type="date" class="Date" id="dob" ></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span" >Qualification:</span></td>
+                            <td><select id="qual">
+                                <option  value="Select">Select</option>
+                                <option  value="graduate">Graduate</option>
+                                <option  value="masters">Masters</option>
+                                </select>
+                            </td>
+                            <td><span>Contact Number:</span></td>
+                            <td><input type="text" id="cnumber"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span" >Primary Email:</span></td>
+                            <td><input type="email" id="emailId"></td>
+                            <td><span>Secondary Email:</span></td>
+                            <td><input type="email" id="secEmail"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span>City:</span></td>
+                            <td><input type="text" id="city"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span" >Address:</span></td>
+                            <td><input type="text" id="address" minlength="10" maxlength="50"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span" >Student Description:</span></td>
+                            <td><input type="text" id= "stDesc" minlength="10" maxlength="50"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><span class="span" >Resume:</span></td>
+                            <td><input type="file" value="" id="rid" style="display: none"></td> 
+                        </tr>
+                        <tr class="row">
+                            <td></td>
+            
+                            <td>
+                            <div class="btn-group">
+                            <input type="submit" style="text-align: center" class="button btn-normal" id="edit" onclick="updateInfoMsg()" value="Update">
+                            <input type="button" class="button btn-normal" id="close" value="close">
+                            </div>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+            
+                <footer class="footer">
+               </footer>
+            
+    </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
